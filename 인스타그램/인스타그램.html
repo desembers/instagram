@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="인스타그램.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div id="timer" onclick="Time()"></div>
+      <div class="img-tag">
+        <img src="svg/chart-bar.svg" alt="bar" />
+        <img src="svg/wifi.svg" alt="wifi" />
+        <img src="svg/battery.svg" alt="battery" />
+      </div>
+    </header>
+    <div class="Instagrm-area">
+    <div class="font">Instagram</div>
+    </div>
+    <main class="main-area">
+      <img src="" alt="image">
+    </main>
+    <br><br>
+    <footer class="footer-img">
+      <div class="img-bottom">
+        <img src="svg/home.svg" alt="home" />
+      </div>
+      <div class="img-bottom">
+        <img src="svg/search.svg" alt="search" />
+      </div>
+      <div class="img-bottom">
+        <img src="svg/add.svg" alt="add" />
+      </div>
+      <div class="img-bottom">
+        <img src="svg/play-circle.svg" alt="display" />
+      </div>
+      <div class="img-bottom">
+        <img src="svg/user.svg" alt="user" />
+      </div>
+      </div>
+    </footer>
+    <script>
+      setInterval(Time, 1000);
+      function Time() {
+        let time = new Date();
+        document.getElementById("timer").innerHTML = time.toLocaleTimeString();
+      }
+    </script>
+  </body>
+</html>
+
